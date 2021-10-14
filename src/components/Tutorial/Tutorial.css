@@ -1,0 +1,13 @@
+#tutorialMainDiv {
+    display: flex;
+    height: 100%;
+}
+
+#tutorialDrawer {
+    min-width: 20%;
+    height: 100%;
+}
+
+.drawerExpansion {
+    background-color: #bdbdbd;
+}

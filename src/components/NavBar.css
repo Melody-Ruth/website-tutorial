@@ -1,0 +1,8 @@
+.menuButton {
+    margin-right: 2rem;
+}
+
+.myToolBar {
+    display: flex;
+    justify-content: space-between;
+}
