@@ -23,19 +23,19 @@ import { Link } from 'react-router-dom';
 const NavBar = ({}) => {
     //const classes = useStyles();
     return (
-        <AppBar position="static" className="appbar">
-        <Toolbar className="myToolBar">
-            <Typography variant="h5" className="myName">
-              Website Tutorial
-            </Typography>
-            <div className="navButtons">
-                <Button color="inherit" component={Link} to={'/website-tutorial/'}>Tutorial</Button>
-                <Button color="inherit" component={Link} to={'/website-tutorial/about'}>About</Button>
-                <Button color="inherit" component={Link} to={'/website-tutorial/links'}>Resources</Button>
-                <Button color="inherit" component={Link} to={'/website-tutorial/critique'}>Critique</Button>
-            </div>
-        </Toolbar>
-      </AppBar>
+            <AppBar position="static" className="appbar">
+            <Toolbar className="myToolBar">
+                <Typography variant="h5" className="myName">
+                Website Tutorial
+                </Typography>
+                <div className="navButtons">
+                    <Button color="inherit" component={Link} to={'/website-tutorial/'}>Tutorial</Button>
+                    <Button color="inherit" component={Link} to={'/website-tutorial/about'}>About</Button>
+                    <Button color="inherit" component={Link} to={'/website-tutorial/links'}>Resources</Button>
+                    <Button color="inherit" component={Link} to={'/website-tutorial/critique'}>Critique</Button>
+                </div>
+            </Toolbar>
+        </AppBar>
     )
 }
 

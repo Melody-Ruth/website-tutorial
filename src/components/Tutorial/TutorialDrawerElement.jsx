@@ -23,7 +23,7 @@ const TutorialDrawerElement = (props) => {
             </ListItem>
             {props.expanded ?
                 props.subSteps.map((text, index) => (
-                <ListItem onClick={handleClick} sx={{bgcolor: grey[300]}}>
+                <ListItem button onClick={handleClick} sx={{bgcolor: grey[300]}}>
                     <ListItemText primary={text} />
                 </ListItem>)) : <div></div>
             }
