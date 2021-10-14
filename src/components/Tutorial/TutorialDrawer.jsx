@@ -10,7 +10,7 @@ import './Tutorial.css';
 
 const TutorialDrawer = (props) => {
     const [steps, setSteps] = useState([
-        {text: 'Step 1: Hello, World!', steps: ['1.1', '1.2', '1.3']},
+        {text: 'Step 1: Hello, World!', steps: ['1.1 Your first website', '1.2 Anatomy of an HTML file', '1.3 Text tags']},
         {text: 'Step 2: Links and Images', steps: ['2.1', '2.2']},
         {text: 'Step 3: Divs and Positioning', steps: []}
     ]);

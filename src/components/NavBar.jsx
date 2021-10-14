@@ -25,8 +25,8 @@ const NavBar = ({}) => {
     return (
             <AppBar position="static" className="appbar">
             <Toolbar className="myToolBar">
-                <Typography variant="h5" className="myName">
-                Website Tutorial
+                <Typography variant="h5" className="myName" color="#fffff">
+                Learn to make a website!
                 </Typography>
                 <div className="navButtons">
                     <Button color="inherit" component={Link} to={'/website-tutorial/'}>Tutorial</Button>

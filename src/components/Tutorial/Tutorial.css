@@ -5,9 +5,27 @@
 
 #tutorialDrawer {
     min-width: 20%;
-    height: 100%;
 }
 
 .drawerExpansion {
     background-color: #bdbdbd;
+}
+
+.stepContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    width: 100%;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.miniStep {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.stepParagraph {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }

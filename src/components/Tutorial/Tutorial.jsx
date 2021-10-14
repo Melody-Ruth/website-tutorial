@@ -25,9 +25,7 @@ const Tutorial = () => {
     return (
       <div id="tutorialMainDiv">
         <TutorialDrawer clickFunction={changeStep} selectedId={selectedStep.id}/>
-        <div>
-          {selectedStep.component}
-        </div>
+        {selectedStep.component}
       </div>
     )
   }
