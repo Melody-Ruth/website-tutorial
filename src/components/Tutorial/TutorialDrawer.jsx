@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Card from '@mui/material/Card';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -14,6 +14,10 @@ const TutorialDrawer = (props) => {
         {text: 'Step 2: Links and Images', steps: ['2.1', '2.2']},
         {text: 'Step 3: Divs and Positioning', steps: []}
     ]);
+    const myRef = useRef(null);
+    const executeScroll = () => {
+        myRef.current.scrollIntoView();
+    }
     return (
         <Card
             id="tutorialDrawer"
