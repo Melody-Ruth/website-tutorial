@@ -13,34 +13,22 @@ const Step1 = (props) => {
     const ref2 = React.createRef();
     const ref3 = React.createRef();
     const [stepRefs, setStepRefs] = useState([]);
-    /*const [stepRefs, setStepRefs] = useState([React.createRef(), React.createRef(), React.createRef()]);
-    //const itemsRef = useRef([]);
-    const testRef = React.createRef();
-    const testRef2 = React.createRef();
-    const testRef3 = React.createRef();
-    const testRefList = [testRef, testRef2, testRef3];
-    useEffect(() => {  
-        setStepRefs([testRef, testRef2, testRef3]);
-        console.log("loading up");
-        console.log(testRef);
-        console.log(stepRefs[0]);
-        console.log(testRefList);
-        //setStepRefs([useRef(null), useRef(null), useRef(null)]);
-        //props.setRefs(stepRefs);
-        //console.log(stepRefs);
-        //stepRef.current = itemsRef.current.slice(0, props.items.length);
-        //itemsRef.current = itemsRef.current.slice(0, 3);
-        //console.log(itemsRef);
-        console.log(stepRefs);
-        props.setRefs(stepRefs);
-    });*/
     useEffect(() => {
-        console.log(ref1);
-        //let testVar = [];
-        //stepRefs = [ref1];
-        setStepRefs([ref1]);
-        console.log(stepRefs[0]);
+        //console.log(ref1);
+        var tempList = [];
+        tempList[0] = ref1.current;
+        tempList[1] = ref2.current;
+        tempList[2] = ref3.current;
+        setStepRefs(tempList);
     }, []);
+    useEffect(() => {
+        //console.log(ref1);
+        //console.log("Should be set now: "+stepRefs[0]);
+        if (typeof(stepRefs[0]) != undefined) {
+            //console.log("hello??");
+            props.setRefs(stepRefs);
+        }
+    }, [stepRefs]);
     return (
         <div className="stepContainer">
           <Typography variant="h4" color="secondary.dark" sx={{ mb: "0.8em"}}>

@@ -14,7 +14,7 @@ import Step3 from './Step3';
 const Tutorial = () => {
     const [selectedStep, setSelectedStep] = useState({id: 0, component: <div/>, refs: null});
     const changeStep = (newId) => {
-      //console.log("Trying to set up");
+      console.log("Trying to change step");
       //console.log("Before: "+selectedStep.refs);
       if (newId ==0) {
         setSelectedStep({...selectedStep, id: newId, component: <Step1/>});
@@ -26,7 +26,7 @@ const Tutorial = () => {
       //console.log(selectedStep.component);
       //console.log("After: "+selectedStep.refs);
     }
-    /*const setRefs = (newRefs) => {
+    const setRefs = (newRefs) => {
       //console.log("Hello????");
       console.log("Trying to set");
       console.log(newRefs);
@@ -37,19 +37,19 @@ const Tutorial = () => {
       console.log("Trying to scroll");
       console.log(selectedStep.refs);
       //console.log(stepNum);
-      selectedStep.refs[stepNum].current.scrollIntoView({ behavior: 'smooth' });
-    }*/
+      selectedStep.refs[stepNum].scrollIntoView({ behavior: 'smooth' });
+    }
     useEffect(() => {  
       changeStep(0);
     },[]);
     return (
       <div id="tutorialMainDiv">
-        <TutorialDrawer clickFunction={changeStep} selectedId={selectedStep.id}/>
-        {selectedStep.component}
-        {/*React.cloneElement(
+        <TutorialDrawer clickFunction={changeStep} scrollFunction={scrollToStep} selectedId={selectedStep.id}/>
+        {/*selectedStep.component*/}
+        {React.cloneElement(
           selectedStep.component, 
           { setRefs: setRefs }
-        )*/}
+        )}
       </div>
     )
   }

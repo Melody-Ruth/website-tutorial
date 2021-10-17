@@ -11,9 +11,6 @@ import './Tutorial.css';
 const TutorialDrawerElement = (props) => {
     //const [selected, setSelected] = useState(false);
     const handleClick = () => {
-        //setSelected(true);
-        //console.log("Hello????");
-        //console.log(props.expanded);
         props.clickFunction(props.id);
     }
     return (
@@ -23,7 +20,7 @@ const TutorialDrawerElement = (props) => {
             </ListItem>
             {props.expanded ?
                 props.subSteps.map((text, index) => (
-                <ListItem button id={index} sx={{bgcolor: grey[300]}}>
+                <ListItem button onClick={() => props.scrollFunction(index,index)} id={index} sx={{bgcolor: grey[300]}}>
                     <ListItemText primary={text} />
                 </ListItem>)) : <div></div>
             }
