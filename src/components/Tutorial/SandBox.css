@@ -1,0 +1,37 @@
+#container {
+    display: flex;
+}
+
+#codeInput {
+    background-color:#262626;
+    color:white;
+    font-family: monospace;
+    font-size: 1.1rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+    min-height: 20rem;
+}
+
+.codeInputText {
+    display: inline;
+}
+
+input#changeableCode {
+    color: white;
+    font-family: monospace;
+    height: 0.6em;
+}
+
+#result {
+    border: 1px solid grey;
+    margin: 1rem;
+    margin-left: 0;
+    width: 50%;
+    white-space: pre-wrap;
+}
+
+#errorText {
+    color: red;
+    text-align: center;
+}

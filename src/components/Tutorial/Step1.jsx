@@ -7,6 +7,7 @@ import ListItemText from '@mui/material/ListItemText';
 import '../../App.css';
 import './Tutorial.css';
 import { Divider } from '@mui/material';
+import SandBox from './SandBox';
 
 const Step1 = (props) => {
     const ref1 = React.createRef();
@@ -48,6 +49,7 @@ const Step1 = (props) => {
                 </Typography>
             </div>
             <div class="stepParagraph">
+                <SandBox/>
                 <Typography variant="p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl augue, venenatis vitae consequat vel, scelerisque ac neque. 
                 Nunc ut quam dignissim, malesuada lectus eget, posuere turpis. Nulla facilisis odio sit amet posuere rhoncus. Praesent vel varius urna. 
