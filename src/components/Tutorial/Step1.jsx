@@ -41,30 +41,20 @@ const Step1 = (props) => {
             </Typography>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl augue, venenatis vitae consequat vel, scelerisque ac neque. 
-                Nunc ut quam dignissim, malesuada lectus eget, posuere turpis. Nulla facilisis odio sit amet posuere rhoncus. Praesent vel varius urna. 
-                Sed porta, nisl a vestibulum porta, turpis dolor vulputate ligula, vitae rhoncus leo tortor nec lectus. 
-                Nulla pharetra placerat enim eget volutpat. 
-                Nulla convallis elementum elit, at commodo sapien. Ut iaculis accumsan erat at auctor. Sed porttitor orci dignissim malesuada dapibus.
-                </Typography>
-            </div>
-            <div class="stepParagraph">
-                <SandBox/>
-                <Typography variant="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl augue, venenatis vitae consequat vel, scelerisque ac neque. 
-                Nunc ut quam dignissim, malesuada lectus eget, posuere turpis. Nulla facilisis odio sit amet posuere rhoncus. Praesent vel varius urna. 
-                Sed porta, nisl a vestibulum porta, turpis dolor vulputate ligula, vitae rhoncus leo tortor nec lectus. 
-                Nulla pharetra placerat enim eget volutpat. 
-                Nulla convallis elementum elit, at commodo sapien. Ut iaculis accumsan erat at auctor. Sed porttitor orci dignissim malesuada dapibus.
-                </Typography>
+                Welcome to the tutorial! If you follow these steps in order you will learn how to make your own website with HTML and CSS.
+                The tutorial examples will create an ocean-themed website, but you can make a site themed around anything you'd like using the same steps.
+                In this first step, we'll create an HTML file, add text to it, and see what it looks like in a browser.</Typography>
             </div>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Sed id sodales dui, at placerat mi. Mauris pharetra bibendum laoreet. Quisque eget dolor purus.
-                Quisque sollicitudin fringilla eros, id cursus orci ullamcorper ac. Quisque fringilla vitae erat nec sodales. 
-                Phasellus a leo in arcu aliquet condimentum. Mauris rutrum enim eget imperdiet placerat. 
-                Morbi ultrices massa urna, at cursus eros varius auctor.
-                Nunc volutpat turpis at vulputate placerat. Cras neque quam, dignissim eget urna sed, mollis tempus quam.
+                First, a bit of context. No matter how fancy a website is or how it was created, underneath it will be made up of HTML code.
+                If you right click on any page and select "Inspect" you can see the underlying HTML code and how it corresponds to the elements of the page.
+                (Websites can change what happens when you right click, so this won't work 100% of the time, but they will still have an HTML file)
+                CSS code is used to add styling to websites, including colors, fonts, and complicated layouts. 
+                JavaScript code is used to add interactivity, from simple button features to complex server communication.
+                If you've made a website with Wordpress, Squarespace, etc, underneath it was HTML, CSS, and JavaScript.
+                Any features they offered can be recreated with HTML, CSS, and JavaScript, and using the underlying languages gives you more freedom.
+                In this tutorial we'll learn the basics of HTML and CSS.
                 </Typography>
             </div>
           </div>
@@ -133,6 +123,7 @@ const Step1 = (props) => {
                 Nulla convallis elementum elit, at commodo sapien. Ut iaculis accumsan erat at auctor. Sed porttitor orci dignissim malesuada dapibus.
                 </Typography>
             </div>
+            <SandBox/>
           </div>
         </div>
     )
