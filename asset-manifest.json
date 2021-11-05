@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/website-tutorial/static/css/main.31bcbb3c.chunk.css",
-    "main.js": "/website-tutorial/static/js/main.28a00d00.chunk.js",
-    "main.js.map": "/website-tutorial/static/js/main.28a00d00.chunk.js.map",
-    "runtime-main.js": "/website-tutorial/static/js/runtime-main.39fe707e.js",
-    "runtime-main.js.map": "/website-tutorial/static/js/runtime-main.39fe707e.js.map",
-    "static/js/2.da0d058f.chunk.js": "/website-tutorial/static/js/2.da0d058f.chunk.js",
-    "static/js/2.da0d058f.chunk.js.map": "/website-tutorial/static/js/2.da0d058f.chunk.js.map",
-    "static/js/3.27ec54c3.chunk.js": "/website-tutorial/static/js/3.27ec54c3.chunk.js",
-    "static/js/3.27ec54c3.chunk.js.map": "/website-tutorial/static/js/3.27ec54c3.chunk.js.map",
+    "main.css": "/website-tutorial/static/css/main.6f0d2a10.chunk.css",
+    "main.js": "/website-tutorial/static/js/main.5d621ceb.chunk.js",
+    "main.js.map": "/website-tutorial/static/js/main.5d621ceb.chunk.js.map",
+    "runtime-main.js": "/website-tutorial/static/js/runtime-main.8f869622.js",
+    "runtime-main.js.map": "/website-tutorial/static/js/runtime-main.8f869622.js.map",
+    "static/js/2.d0d33234.chunk.js": "/website-tutorial/static/js/2.d0d33234.chunk.js",
+    "static/js/2.d0d33234.chunk.js.map": "/website-tutorial/static/js/2.d0d33234.chunk.js.map",
+    "static/js/3.f52ccea8.chunk.js": "/website-tutorial/static/js/3.f52ccea8.chunk.js",
+    "static/js/3.f52ccea8.chunk.js.map": "/website-tutorial/static/js/3.f52ccea8.chunk.js.map",
     "index.html": "/website-tutorial/index.html",
-    "static/css/main.31bcbb3c.chunk.css.map": "/website-tutorial/static/css/main.31bcbb3c.chunk.css.map",
-    "static/js/2.da0d058f.chunk.js.LICENSE.txt": "/website-tutorial/static/js/2.da0d058f.chunk.js.LICENSE.txt",
+    "static/css/main.6f0d2a10.chunk.css.map": "/website-tutorial/static/css/main.6f0d2a10.chunk.css.map",
+    "static/js/2.d0d33234.chunk.js.LICENSE.txt": "/website-tutorial/static/js/2.d0d33234.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/website-tutorial/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.39fe707e.js",
-    "static/js/2.da0d058f.chunk.js",
-    "static/css/main.31bcbb3c.chunk.css",
-    "static/js/main.28a00d00.chunk.js"
+    "static/js/runtime-main.8f869622.js",
+    "static/js/2.d0d33234.chunk.js",
+    "static/css/main.6f0d2a10.chunk.css",
+    "static/js/main.5d621ceb.chunk.js"
   ]
 }
