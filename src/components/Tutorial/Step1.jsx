@@ -65,20 +65,49 @@ const Step1 = (props) => {
             </Typography>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Sed id sodales dui, at placerat mi. Mauris pharetra bibendum laoreet. Quisque eget dolor purus.
-                Quisque sollicitudin fringilla eros, id cursus orci ullamcorper ac. Quisque fringilla vitae erat nec sodales. 
-                Phasellus a leo in arcu aliquet condimentum. Mauris rutrum enim eget imperdiet placerat. 
-                Morbi ultrices massa urna, at cursus eros varius auctor.
-                Nunc volutpat turpis at vulputate placerat. Cras neque quam, dignissim eget urna sed, mollis tempus quam.
+                We'll start with a simple HTML file that will tell the browser to display some text.
+                Every HTML file follows a particular format, so for such a simple website most of the HTML code will be standard code that you'll find in virtually every HTML file.
+                </Typography>
+                <Card id="exampleContainer">
+                <div class="codeExample">
+                    <p className="codeExampleText">
+                        &lt;!DOCTYPE html&gt;<br/>
+                        &lt;html lang="en"&gt;<br/>
+                            &emsp;&lt;head&gt;<br/>
+                                &emsp;&emsp;&lt;title&gt;Tab title to display in browser&lt;/title&gt;<br/>
+                            &emsp;&lt;/head&gt;<br/>
+                            &emsp;&lt;body&gt;<br/>
+                            &emsp;&emsp;&lt;p&gt;Hello, world!&lt;/p&gt;<br/>
+                            &emsp;&lt;/body&gt;<br/>
+                        &lt;/html&gt;<br/>
+                    </p>
+                </div>
+                <Typography variant="p" id="exampleLabel">
+                A simple example HTML file
+                </Typography>
+                </Card>
+            </div>
+            <div class="stepParagraph">
+                <Typography variant="p">
+                    HTML files are made of nested tags (the things in &lt; &gt;). 
+                    Some tags will have a starting "open" tag of the form &lt;tag&gt; and an ending "closing" tag of the form &lt;/tag&gt; 
+                    with content in between, while others will just have one tag of the form &lt;tag/&gt;.
+                    The &lt;!DOCTYPE html&gt; says that this file will consist of HTML code.
+                    (If you've seen an html file that starts with something different after the !DOCTYPE, it was probably using an older version of HTML.
+                    We'll be using the HTML5, which is the latest version)
+                    All of the html code will be contained with &lt;html&gt; tags, and it will be broken up into a "head" and a "body".
+                    Information about the website, non-HTML code, and references to other files will go between the &lt;head&gt; and &lt;/head&gt;.
+                    The content we want to display on the website will go between the &lt;body&gt; and &lt;/body&gt;.
+                    In this case, we want to display the text "Hello, world!" (a common first task when learning a new type of programming).
+                    This is accomplished using the &lt;p&gt; (as in paragraph) tag, with the text content we want to display put in between the opening and closing p tags.
                 </Typography>
             </div>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl augue, venenatis vitae consequat vel, scelerisque ac neque. 
-                Nunc ut quam dignissim, malesuada lectus eget, posuere turpis. Nulla facilisis odio sit amet posuere rhoncus. Praesent vel varius urna. 
-                Sed porta, nisl a vestibulum porta, turpis dolor vulputate ligula, vitae rhoncus leo tortor nec lectus. 
-                Nulla pharetra placerat enim eget volutpat. 
-                Nulla convallis elementum elit, at commodo sapien. Ut iaculis accumsan erat at auctor. Sed porttitor orci dignissim malesuada dapibus.
+                    If we put this code into a ____.html file (any name will work for our current purposes as long as the file is of type HTML) 
+                    and open it in a browser (either by double-clicking on the file or using the right click menu from a file explorer),
+                    it will open up a new tab which will display the text "Hello, world!". You can copy and paste the code to try it for yourself!
+                    (Note that editing the file won't immediately affect the page; you'll have to save the file and reload the tab to see the updates.)
                 </Typography>
             </div>
           </div>
@@ -89,38 +118,28 @@ const Step1 = (props) => {
             </Typography>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Sed id sodales dui, at placerat mi. Mauris pharetra bibendum laoreet. Quisque eget dolor purus.
-                Quisque sollicitudin fringilla eros, id cursus orci ullamcorper ac. Quisque fringilla vitae erat nec sodales. 
-                Phasellus a leo in arcu aliquet condimentum. Mauris rutrum enim eget imperdiet placerat. 
-                Morbi ultrices massa urna, at cursus eros varius auctor.
-                Nunc volutpat turpis at vulputate placerat. Cras neque quam, dignissim eget urna sed, mollis tempus quam.
+                There are multiple tags for displaying text. &lt;p&gt; is used for standard-sized text, like what you're reading now.
+                Headers will use &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, or &lt;h6&gt; depending on the desired prominance/size
+                (h1 is the largest).
                 </Typography>
             </div>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Sed id sodales dui, at placerat mi. Mauris pharetra bibendum laoreet. Quisque eget dolor purus.
-                Quisque sollicitudin fringilla eros, id cursus orci ullamcorper ac. Quisque fringilla vitae erat nec sodales. 
-                Phasellus a leo in arcu aliquet condimentum. Mauris rutrum enim eget imperdiet placerat. 
-                Morbi ultrices massa urna, at cursus eros varius auctor.
-                Nunc volutpat turpis at vulputate placerat. Cras neque quam, dignissim eget urna sed, mollis tempus quam.
+                We can use &lt;br&gt; to make the text start a new line
+                (pressing enter in the html file will only change the way the file is displayed, not how it is rendered by the browser).
+                Multiple &lt;br&gt;s in a row will result in a multi-line gap in the text.
                 </Typography>
             </div>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Sed id sodales dui, at placerat mi. Mauris pharetra bibendum laoreet. Quisque eget dolor purus.
-                Quisque sollicitudin fringilla eros, id cursus orci ullamcorper ac. Quisque fringilla vitae erat nec sodales. 
-                Phasellus a leo in arcu aliquet condimentum. Mauris rutrum enim eget imperdiet placerat. 
-                Morbi ultrices massa urna, at cursus eros varius auctor.
-                Nunc volutpat turpis at vulputate placerat. Cras neque quam, dignissim eget urna sed, mollis tempus quam.
+                Any text between a &lt;b&gt; and &lt;/b&gt; will display as bold. Similarly, &lt;i&gt; will make your text italic and &lt;u&gt; will make it underlined.
                 </Typography>
             </div>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl augue, venenatis vitae consequat vel, scelerisque ac neque. 
-                Nunc ut quam dignissim, malesuada lectus eget, posuere turpis. Nulla facilisis odio sit amet posuere rhoncus. Praesent vel varius urna. 
-                Sed porta, nisl a vestibulum porta, turpis dolor vulputate ligula, vitae rhoncus leo tortor nec lectus. 
-                Nulla pharetra placerat enim eget volutpat. 
-                Nulla convallis elementum elit, at commodo sapien. Ut iaculis accumsan erat at auctor. Sed porttitor orci dignissim malesuada dapibus.
+                Try out these tags in the code sandbox below! Make sure you match up all of your opening tags with closing tags.
+                Also, always close inner tags before closing outer ones (no overlaps).
+                The browser will probably parse this correctly anyway, but it isn't part of the official standard so there are no guarantees.
                 </Typography>
             </div>
             <SandBox/>
