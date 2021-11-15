@@ -6,7 +6,7 @@ import { Divider, Link } from '@mui/material';
 
 const About = () => {
     return (
-      <div className="aboutContainer">
+      <div className="pContainer">
           <Typography variant="h4" color="secondary.dark" sx={{ mb: "0.8em"}}>
           Welcome!
           </Typography>

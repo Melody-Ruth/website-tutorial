@@ -31,7 +31,7 @@ const Step1 = (props) => {
         }
     }, [stepRefs]);
     return (
-        <div className="stepContainer">
+        <div className="pContainer stepContainer">
           <Typography variant="h4" color="secondary.dark" sx={{ mb: "0.8em"}}>
           Step 1: Hello, World!
           </Typography>

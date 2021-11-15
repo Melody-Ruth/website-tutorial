@@ -36,7 +36,7 @@ const Step3 = (props) => {
         }
     }, [stepRefs]);
     return (
-        <div className="stepContainer">
+        <div className="pContainer stepContainer">
           <Typography variant="h4" color="secondary.dark" sx={{ mb: "0.8em"}}>
           Step 3: Divs and positioning
           </Typography>

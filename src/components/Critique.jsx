@@ -6,6 +6,7 @@ const Critique = () => {
     return (
       <div>
         <Typography variant="p" className="text" sx={{ p: "2em"}}>
+        TODO add citation for html and css aren't programming languages
         This is the critique page of the website. Here I am engaging with another tutorial, explaining why I made different choices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Aliquam nisl augue, venenatis vitae consequat vel, scelerisque ac neque. Nunc ut quam dignissim, malesuada lectus eget, posuere turpis. 
         Nulla facilisis odio sit amet posuere rhoncus. Praesent vel varius urna. Sed porta, nisl a vestibulum porta, turpis dolor vulputate ligula, 

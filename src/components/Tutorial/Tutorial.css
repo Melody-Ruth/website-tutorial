@@ -12,20 +12,8 @@
 }
 
 .stepContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem;
     width: 100%;
-    text-align: left;
     overflow-y: scroll;
-}
-
-.aboutContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem;
-    text-align: left;
-    overflow-y: auto;
 }
 
 .miniStep {
