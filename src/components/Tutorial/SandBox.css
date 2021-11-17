@@ -1,5 +1,10 @@
 #container {
     display: flex;
+    text-align: left;
+}
+
+#cardContainer {
+    text-align: center;
 }
 
 #codeInput {

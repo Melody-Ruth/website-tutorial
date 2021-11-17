@@ -170,7 +170,8 @@ const SandBox = (props) => {
         );
     }*/
     return (
-        <Card id="container">
+        <Card id="cardContainer">
+            <div id="container">
             <div id="codeInput">
                 <p className="codeInputText">
                     &lt;!DOCTYPE html&gt;<br/>
@@ -193,6 +194,8 @@ const SandBox = (props) => {
             <div id="result">
                 {pError ? <p id="errorText">{pErrorText}</p> : generalText(pDisplayValue,0)}
             </div>
+            </div>
+            <p>Edit the text between the &lt;p&gt; and &lt;/p&gt; on the left and see the result generated on the right change</p>
         </Card>
     )
   }
