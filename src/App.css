@@ -57,3 +57,15 @@
   padding: 2.5rem;
   text-align: left;
 }
+
+#fontChange {
+  font-family: 'Times New Roman';
+}
+
+#colorChange {
+  color: #33c9dc;
+}
+
+#bgChange {
+  background-color: #ffe082;
+}

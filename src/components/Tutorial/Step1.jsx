@@ -12,14 +12,12 @@ import SandBox from './SandBox';
 const Step1 = (props) => {
     const ref1 = React.createRef();
     const ref2 = React.createRef();
-    const ref3 = React.createRef();
     const [stepRefs, setStepRefs] = useState([]);
     useEffect(() => {
         //console.log(ref1);
         var tempList = [];
         tempList[0] = ref1.current;
         tempList[1] = ref2.current;
-        tempList[2] = ref3.current;
         setStepRefs(tempList);
     }, []);
     useEffect(() => {
@@ -91,7 +89,7 @@ const Step1 = (props) => {
                 <Typography variant="p">
                     HTML files are made of nested tags (the things in &lt; &gt;). 
                     Some tags will have a starting "open" tag of the form &lt;tag&gt; and an ending "closing" tag of the form &lt;/tag&gt; 
-                    with content in between, while others will just have one tag of the form &lt;tag/&gt;.
+                    with content in between, while others will just have one tag of the form &lt;tag&gt;.
                     The &lt;!DOCTYPE html&gt; says that this file will consist of HTML code.
                     (If you've seen an html file that starts with something different after the !DOCTYPE, it was probably using an older version of HTML.
                     We'll be using the HTML5, which is the latest version)
@@ -110,40 +108,6 @@ const Step1 = (props) => {
                     (Note that editing the file won't immediately affect the page; you'll have to save the file and reload the tab to see the updates.)
                 </Typography>
             </div>
-          </div>
-          <Divider/>
-          <div id="1.3" className="miniStep" ref={ref3}>
-            <Typography variant="h5" color="primary">
-            1.3 Text tags
-            </Typography>
-            <div class="stepParagraph">
-                <Typography variant="p">
-                There are multiple tags for displaying text. &lt;p&gt; is used for standard-sized text, like what you're reading now.
-                Headers will use &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, or &lt;h6&gt; depending on the desired prominance/size
-                (h1 is the largest).
-                </Typography>
-            </div>
-            <div class="stepParagraph">
-                <Typography variant="p">
-                We can use &lt;br&gt; to make the text start a new line
-                (pressing enter in the html file will only change the way the file is displayed, not how it is rendered by the browser).
-                Multiple &lt;br&gt;s in a row will result in a multi-line gap in the text.
-                </Typography>
-            </div>
-            <div class="stepParagraph">
-                <Typography variant="p">
-                Any text between a &lt;b&gt; and &lt;/b&gt; will display as bold. Similarly, &lt;i&gt; will make your text italic and &lt;u&gt; will make it underlined.
-                </Typography>
-            </div>
-            <div class="stepParagraph">
-                <Typography variant="p">
-                Try out these tags in the code sandbox below! (change the code on the left to affect the result on the righ)
-                Make sure you match up all of your opening tags with closing tags.
-                Also, always close inner tags before closing outer ones (no overlaps).
-                The browser will probably parse this correctly anyway, but it isn't part of the official standard so there are no guarantees.
-                </Typography>
-            </div>
-            <SandBox/>
           </div>
         </div>
     )
