@@ -12,7 +12,7 @@ const TutorialDrawer = (props) => {
     const [steps, setSteps] = useState([
         {text: 'Step 1: Hello, World!', steps: ['1.1 Your first website', '1.2 Anatomy of an HTML file']},
         {text: 'Step 2: Text, Links, and Images', steps: ['2.1 Text tags', '2.2 Attributes', '2.3 Images', '2.4 Links']},
-        {text: 'Step 3: Styling with CSS', steps: ['3.1 Adding CSS','3.2 Font and Color','3.3 Divs','3.4']}
+        {text: 'Step 3: Styling with CSS', steps: ['3.1 Adding CSS','3.2 Font and Color','3.3 Divs']}
     ]);
     const myRef = useRef(null);
     const executeScroll = () => {

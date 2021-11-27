@@ -40,3 +40,8 @@ input#changeableCode {
     color: red;
     text-align: center;
 }
+
+#beachDiv {
+    background-color: tan;
+    width: 300px;
+}

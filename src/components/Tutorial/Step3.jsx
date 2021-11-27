@@ -2,17 +2,18 @@ import React, { useState, useEffect, useRef } from 'react';
 import Card from '@mui/material/Card';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
+import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import ListItemText from '@mui/material/ListItemText';
 import '../../App.css';
 import './Tutorial.css';
 import { Divider } from '@mui/material';
+import SandBox3 from './SandBox3';
 
 const Step3 = (props) => {
     const ref1 = React.createRef();
     const ref2 = React.createRef();
     const ref3 = React.createRef();
-    const ref4 = React.createRef();
     const [stepRefs, setStepRefs] = useState([]);
     useEffect(() => {
         //console.log(ref1);
@@ -20,7 +21,6 @@ const Step3 = (props) => {
         tempList[0] = ref1.current;
         tempList[1] = ref2.current;
         tempList[2] = ref3.current;
-        tempList[3] = ref4.current;
         setStepRefs(tempList);
     }, []);
     useEffect(() => {
@@ -110,70 +110,80 @@ const Step3 = (props) => {
             </Typography>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Sed id sodales dui, at placerat mi. Mauris pharetra bibendum laoreet. Quisque eget dolor purus.
-                Quisque sollicitudin fringilla eros, id cursus orci ullamcorper ac. Quisque fringilla vitae erat nec sodales. 
-                Phasellus a leo in arcu aliquet condimentum. Mauris rutrum enim eget imperdiet placerat. 
-                Morbi ultrices massa urna, at cursus eros varius auctor.
-                Nunc volutpat turpis at vulputate placerat. Cras neque quam, dignissim eget urna sed, mollis tempus quam.
+                    Divs are containers for grouping elements. 
+                    All of the elements between the &lt;div&gt; and &lt;/div&gt; will be inside of the div.
+                    Nesting is allowed, so this includes other divs.
+                    Divs are rectangles, and are by default transparent (only showing the elements inside of them).
+                    You can control the appearance of a div using CSS.
                 </Typography>
             </div>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Sed id sodales dui, at placerat mi. Mauris pharetra bibendum laoreet. Quisque eget dolor purus.
-                Quisque sollicitudin fringilla eros, id cursus orci ullamcorper ac. Quisque fringilla vitae erat nec sodales. 
-                Phasellus a leo in arcu aliquet condimentum. Mauris rutrum enim eget imperdiet placerat. 
-                Morbi ultrices massa urna, at cursus eros varius auctor.
-                Nunc volutpat turpis at vulputate placerat. Cras neque quam, dignissim eget urna sed, mollis tempus quam.
+                    Suppose we want to add an image with a caption on a tan rectangular background to our website.
+                    In order to do this we will put the image and the text inside of a div, then use CSS styling to get the layout we want.
+                    By default the image is very large, so we use the width CSS property to make it 100%, which will cause it to fill the width of its "parent,"
+                    in this case our div. Then we can control the sizing using the div. We set it to 300px.
+                </Typography>
+            </div>
+            <Card id="exampleContainer">
+                <div class="codeExampleContainer">
+                    <div class="codeExampleSmall">
+                        <p className="codeExampleText">
+                            &lt;!DOCTYPE html&gt;<br/>
+                            &lt;html lang="en"&gt;<br/>
+                                &emsp;&lt;head&gt;<br/>
+                                    &emsp;&emsp;&lt;title&gt;Ocean website&lt;/title&gt;<br/>
+                                &emsp;&lt;/head&gt;<br/>
+                                &emsp;&lt;body&gt;<br/>
+                                &emsp;&emsp;&lt;div id="beachDiv"&gt;<br/>
+                                    &emsp;&emsp;&emsp;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Gfp-florida-daytona-beach-beach-shoreline.jpg/1200px-Gfp-florida-daytona-beach-beach-shoreline.jpg"&gt;<br/>
+                                    &emsp;&emsp;&emsp;&lt;p&gt;Beautiful beach&lt;/p&gt;<br/>
+                                &emsp;&emsp;&lt;/div&gt;<br/>
+                                &emsp;&lt;/body&gt;<br/>
+                            &lt;/html&gt;<br/>
+                        </p>
+                    </div>
+                    <div class="codeExampleSmall">
+                        <p className="codeExampleText">
+                            #beachImg &#123;<br/>
+                            &emsp;width: 100%;<br/>
+                            &#125;<br/><br/>
+
+                            #beachDiv &#123;<br/>
+                            &emsp;background-color: tan;<br/>
+                            &emsp;width: 300px;<br/>
+                            &#125;<br/>
+                        </p>
+                    </div>
+                </div>
+                <Typography variant="p" id="exampleLabel">
+                An HTML file and a CSS file to display an image with a caption
+                </Typography>
+            </Card>
+            <div class="stepParagraph">
+                <Typography variant="p">
+                By default, the image and text will go right up to the edge of the tan rectangle. This would probably look better if there was some padding between the edge of the content and the edge of the div’s rectangle.
+                We can accomplish this with the css property padding. (The padding will outside of the part of the div that determines "width", so the image and text will stay the same size but the box will grow beyond 300 pixels.)
+                Try changing the number of pixels of padding below:
+                </Typography>
+            </div>
+            <SandBox3/>
+            <div class="stepParagraph">
+                <Typography variant="p">
+                (Best practice is to set size properties like width or padding using relative sizing, not absolute pixels. You can learn more about this <Link href="https://www.w3schools.com/cssref/css_units.asp" target="_blank">here</Link>)
                 </Typography>
             </div>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Sed id sodales dui, at placerat mi. Mauris pharetra bibendum laoreet. Quisque eget dolor purus.
-                Quisque sollicitudin fringilla eros, id cursus orci ullamcorper ac. Quisque fringilla vitae erat nec sodales. 
-                Phasellus a leo in arcu aliquet condimentum. Mauris rutrum enim eget imperdiet placerat. 
-                Morbi ultrices massa urna, at cursus eros varius auctor.
-                Nunc volutpat turpis at vulputate placerat. Cras neque quam, dignissim eget urna sed, mollis tempus quam.
+                You’ve reached the end of the tutorial. Congratulations! Hopefully you’ve gotten a taste of what you can accomplish with HTML and CSS. Check out the <Link href='/website-tutorial/links' target="_blank">Resources</Link> to learn more.
                 </Typography>
             </div>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl augue, venenatis vitae consequat vel, scelerisque ac neque. 
-                Nunc ut quam dignissim, malesuada lectus eget, posuere turpis. Nulla facilisis odio sit amet posuere rhoncus. Praesent vel varius urna. 
-                Sed porta, nisl a vestibulum porta, turpis dolor vulputate ligula, vitae rhoncus leo tortor nec lectus. 
-                Nulla pharetra placerat enim eget volutpat. 
-                Nulla convallis elementum elit, at commodo sapien. Ut iaculis accumsan erat at auctor. Sed porttitor orci dignissim malesuada dapibus.
-                </Typography>
-            </div>
-          </div>
-          <div id="3.4" className="miniStep" ref={ref4}>
-            <Typography variant="h5" color="primary">
-            3.4
-            </Typography>
-            <div class="stepParagraph">
-                <Typography variant="p">
-                Sed id sodales dui, at placerat mi. Mauris pharetra bibendum laoreet. Quisque eget dolor purus.
-                Quisque sollicitudin fringilla eros, id cursus orci ullamcorper ac. Quisque fringilla vitae erat nec sodales. 
-                Phasellus a leo in arcu aliquet condimentum. Mauris rutrum enim eget imperdiet placerat. 
-                Morbi ultrices massa urna, at cursus eros varius auctor.
-                Nunc volutpat turpis at vulputate placerat. Cras neque quam, dignissim eget urna sed, mollis tempus quam.
-                </Typography>
-            </div>
-            <div class="stepParagraph">
-                <Typography variant="p">
-                Sed id sodales dui, at placerat mi. Mauris pharetra bibendum laoreet. Quisque eget dolor purus.
-                Quisque sollicitudin fringilla eros, id cursus orci ullamcorper ac. Quisque fringilla vitae erat nec sodales. 
-                Phasellus a leo in arcu aliquet condimentum. Mauris rutrum enim eget imperdiet placerat. 
-                Morbi ultrices massa urna, at cursus eros varius auctor.
-                Nunc volutpat turpis at vulputate placerat. Cras neque quam, dignissim eget urna sed, mollis tempus quam.
-                </Typography>
-            </div>
-            <div class="stepParagraph">
-                <Typography variant="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl augue, venenatis vitae consequat vel, scelerisque ac neque. 
-                Nunc ut quam dignissim, malesuada lectus eget, posuere turpis. Nulla facilisis odio sit amet posuere rhoncus. Praesent vel varius urna. 
-                Sed porta, nisl a vestibulum porta, turpis dolor vulputate ligula, vitae rhoncus leo tortor nec lectus. 
-                Nulla pharetra placerat enim eget volutpat. 
-                Nulla convallis elementum elit, at commodo sapien. Ut iaculis accumsan erat at auctor. Sed porttitor orci dignissim malesuada dapibus.
+                References:<br/>
+                Romy, Ben. “Why HTML is Not a Programming Language.” Syracuse University School of Information Studies, 5 April 2012, https://ischool.syr.edu/why-html-is-not-a-programming-language/.
+                <br/>W3Schools. “HTML &lt;a&gt; target Attribute.” https://www.w3schools.com/tags/att_a_target.asp.
+                <br/>W3Schools. “CSS Box Model.” https://www.w3schools.com/css/css_boxmodel.asp.
                 </Typography>
             </div>
           </div>
