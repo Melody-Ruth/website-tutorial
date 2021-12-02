@@ -65,7 +65,7 @@ const Step2 = (props) => {
             </div>
             <div class="stepParagraph">
                 <Typography variant="p">
-                Try out these tags in the code sandbox below! (change the code on the left to affect the result on the righ)
+                Try out these tags in the code sandbox below! (change the code on the left to affect the result on the right)
                 Make sure you match up all of your opening tags with closing tags.
                 Also, always close inner tags before closing outer ones (no overlaps).
                 The browser will probably parse this correctly anyway, but it isn't part of the official standard so there are no guarantees.
